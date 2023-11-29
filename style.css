@@ -1,0 +1,90 @@
+body {
+}
+.container {
+  width: 90%;
+  max-width: 1040px;
+  margin: 50px auto;
+  padding: 20px;
+  font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans",
+    "DejaVu Sans", Verdana, "sans-serif";
+  font-size: 16px;
+  /* #fce5cd   #f7d7b5*/
+}
+
+section {
+  display: none;
+  padding: 20px;
+  border: 1px solid #ddd;
+  overflow: hidden;
+}
+
+.tab input {
+  display: none;
+}
+.tab-content input {
+  display: inline-block;
+}
+label {
+  display: inline-block;
+  margin: 0 0 -1px;
+  padding: 15px 25px;
+  font-weight: bold;
+  text-align: center;
+  color: #1e3f79;
+  border: 1px solid transparent;
+}
+
+label:before {
+  font-weight: normal;
+  margin-right: 10px;
+}
+
+label:hover {
+  color: #888;
+  cursor: pointer;
+}
+
+input:checked + label {
+  color: #636363;
+  border: 1px solid #ddd;
+  border-top: 5px solid #1e3f79;
+  border-bottom: 1px solid #fff;
+}
+
+#tab1:checked ~ #content1,
+#tab2:checked ~ #content2,
+#tab3:checked ~ #content3,
+#tab4:checked ~ #content4 {
+  display: block;
+}
+ul > li {
+  margin-bottom: 10px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  width: 40%;
+  border-radius: 5px;
+  margin: 0 50px;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+img {
+  border-radius: 5px 5px 0 0;
+}
+
+.card-container {
+  padding: 2px 16px;
+}
+.cards {
+  display: flex;
+  margin-top: 25px;
+}
+.buton {
+  padding: 0 15px;
+  margin-left: 50px;
+}

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulador</title>
+</head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+<link rel="stylesheet" href="style.css">
+
+<body>
+    <div class="card-container">
+        <div class="tab">
+            <input id="tab1" type="radio" name="tabs" checked>
+            <label for="tab1">Solicitar un prestamo</label>
+            <input id="tab2" type="radio" name="tabs">
+            <label for="tab2">Credito para autos</label>
+            <input id="tab3" type="radio" name="tabs">
+            <label for="tab3">Seguros</label>
+            <input id="tab4" type="radio" name="tabs">
+            <label for="tab4">Contactos</label>
+
+
+            <section class="tab-content" id="content1">
+                <h2>Seleccione el monto a financiar para un prestamo personal:</h2>
+                <input type="number" id="monto-prestamo">
+                <label for="cuotas-prestamo">Numero de cuotas:</label>
+                <select name="cuotas-prestamo" id="cuotas-prestamo">
+                    <option value="6">6</option>
+                    <option value="12">12</option>
+                    <option value="18">18</option>
+                    <option value="60">60</option>
+                </select>
+
+                <button id="calc-prestamo" class="buton">CALCULAR</button>
+            </section>
+            <!-- end of section 1 -->
+            <section class="tab-content" id="content2">
+                <h2>Seleccione el monto a financiar para credito automotor:</h2>
+                <input type="number" id="monto-automotor">
+                <label for="cuotas-automotor">Numero de cuotas:</label>
+                <select name="cuotas-automotor" id="cuotas-automotor">
+                    <option value="6">6</option>
+                    <option value="12">12</option>
+                </select>
+                <button id="calc-automotor" class="buton">CALCULAR</button>
+            </section>
+
+            <section class="tab-content" id="content3">
+                <h2>Seguros disponibles:</h2>
+                <ul>
+                    <li>Seguro de vida</li>
+                    <li>Seguro de hogar</li>
+                    <li>Seguro contra incendios</li>
+                    <li>Seguro para autos</li>
+                </ul>
+                <h2>Busca disponibilidad de seguro:</h2>
+                <input type="text" id="input-seguro">
+                <button id="busca-seguro" class="buton">VERIFICAR</button>
+
+            </section>
+            <section class="tab-content" id="content4">
+                <h3>Nuestros datos de contacto son: </h3>
+                <h3> - 11-23458965</h3>
+                <h3> - 11-44568045</h3>
+                <h3> - www.swedenbank.com </h3>
+                <h3> Hasta la proxima... </h3>
+            </section>
+        </div>
+    </div>
+    <div class="cards">
+        <div class="card">
+            <div class="card-container">
+                <h4><b>Resultado Prestamo</b></h4>
+                <div id="resultado-prestamo"></div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-container">
+                <h4><b>Resultado Automotor</b></h4>
+                <div id="resultado-automotor"></div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-container">
+                <h4><b>Resultado Seguro</b></h4>
+                <div id="resultado-seguro"></div>
+            </div>
+        </div>
+    </div>
+    <h1 class="animate__animated animate__pulse animate__infinite" id="dolarloading">Buscando cotizacion del dolar del
+        dia...</h1>
+    <script src="main.js"></script>
+</body>
+
+</html>
