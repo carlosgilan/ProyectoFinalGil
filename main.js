@@ -24,7 +24,7 @@ fetch("https://www.dolarsi.com/api/api.php?type=valoresprincipales")
   })
   .catch(function (err) {
     // There was an error
-    console.warn("Something went wrong.", err);
+    console.warn("Algo salio mal.", err);
   });
 
 //Sistema de simulador de creditos. Segunda Pre Entrega
